@@ -2,7 +2,7 @@
 
 function onBallClick() {
     const elBall = document.querySelector('.ball')
-    var size = +elBall.innerText + 50
+    var size = (+elBall.innerText + 50 > 400) ? 100 : +elBall.innerText + 50
 
 
     elBall.innerText = size
