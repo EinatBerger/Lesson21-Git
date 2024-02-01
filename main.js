@@ -1,8 +1,9 @@
 'use strict'
 
-function onBallClick() {
-    const elBall = document.querySelector('.ball')
-    var size = (+elBall.innerText + 50 > 400) ? 100 : +elBall.innerText + 50
+function onBallClick(elBall) {
+    const maxDiameter = 400
+    // const elBall = document.querySelector('.ball')
+    var size = (+elBall.innerText + 50 > maxDiameter) ? 100 : +elBall.innerText + 50
 
 
     elBall.innerText = size
